@@ -60,6 +60,30 @@
           </section>
         </section>
 
+        <section>
+          <h1>Example #1</h1>
+          <br>
+          <pre contenteditable="true"><code class="nohighlight" data-trim>└── com
+    └── example.com
+        └── libs
+            └── src
+                ├── http
+                │   ├── cache.java
+                │   ├── http10.java
+                │   ├── http11.java
+                │   └── websockets.java
+                ├── math
+                │   ├── graph.java
+                │   ├── shapes.java
+                │   └── triangle.java
+                └── sockets
+                    ├── igmp.java
+                    ├── ip.java
+                    ├── tcp.java
+                    └── udp.java
+</code></pre>
+        </section>
+
       </div>
     </div>
     <script src="reveal.js/lib/js/head.min.js"></script>
@@ -106,7 +130,8 @@
       maxScale: 1.5,
 
       dependencies: [
-        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, 
+          callback: function() { hljs.initHighlightingOnLoad(); } },
       ]
     });
 
