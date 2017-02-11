@@ -1,0 +1,13 @@
+img {
+	border : 0 !important;
+}
+
+.abe {
+  background: rgba(255, 255, 255, .57);
+  color: black;
+}
+
+blockquote {
+  font-style: normal !important;
+  font-weight: bold !important;
+}

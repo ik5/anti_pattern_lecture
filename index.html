@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Anti Pattern</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Anti Pattern</h1>
+          <h2>v2.0</h2>
+          <img src="img/opening.jpg" alt="">
+        </section>
+
+        <section>
+          <section>
+            <h2>What, Who, Where, How?</h2>
+          </section>
+          <section class="abe" data-background="img/Abraham_Lincoln_O-55,_1861-crop.jpg"
+            data-background-position="center">
+            <blockquote data-background-color="#ffff"
+              cite="https://github.com/ik5/pyquotes/blob/master/quotes.txt#L4348">
+              If I had eight hours to chop down a tree, I'd spend six sharpening
+              my ax.
+            </blockquote>
+            <p>-- Abraham Lincoln</p>
+          </section>
+          <section>
+            <h2>What is Design Patterns?</h2>
+            <p>A means to create re-usable solution for the same task or issue that is needed to be solved.</p>
+          </section>
+
+          <section>
+            <h2>What is anti-pattern?</h2>
+            <p>
+              A means of doing things for a re-occurring task or issue that in an inefficient manner.<br>
+            <a href="https://xkcd.com/763/"><img src="img/workaround.png" alt="xkcd workaround"></a></p>
+          </section>
+          <section>
+            <h2>Can I give you some *pointers?</h2>
+            <img src="img/help.png" alt="Can I help you ?">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Editor Wars!</h2>
+            <a href="https://xkcd.com/378/"><img src="img/real_programmers.png" alt="real_programmers"></a>
+          </section>
+          <section>
+            <h2>In the begining ...</h2>
+          </section>
+          <section>
+            <p>There were two types of editors:</p>
+            <ul class="fragment fade-up">
+              <li class="fragment grow">Emacs</li>
+              <li class="fragment grow"> VI</li>
+            </ul>
+          </section>
+          <section>
+            <p>Every pixel of a mouse movement == 1 key stroke</p>
+            <img src="img/key.jpg" alt="key">
+            <img src="img/mouse.png" alt="mouse">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>In Programming</h2>
+          </section>
+          <section data-background="img/knuth.jpg" data-background-position="center" class="abe">
+            <h2>Premature Optimization</h2>
+            <blockquote cite="https://en.wikiquote.org/wiki/Donald_Knuth">
+              The real problem is that programmers have spent far too much time worrying about efficiency in the wrong
+              places and at the wrong times;<br>
+              <em>premature optimization is the root of all evil (or at least most of it) in programming.</em>
+            </blockquote>
+            <p> -- Donal Knuth</p>
+          </section>
+          <section>
+            <h2>(Magic) Literal Values</h2>
+            <img src="img/metal%20fan.jpg" alt="huge metal fan">
+          </section>
+          <section>
+            <h2>Spaghetti code</h2>
+            <img src="img/spaghetti2.gif" alt="spaghetti">
+          </section>
+        </section>
+        <section>
+          <h1>Questions?<br><a href="http://dark-machbot.deviantart.com/art/Sad-Face-Twilight-Sparkle-318150812">
+              <img src="img/sad_face_twilight_sparkle_by_dark_machbot-d59f2qk.png"
+              alt="" title="questions ?"></a></h1>
+          (sorry)
+        </section>
+
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable touch events for navigation
+        touch: true,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Transition style
+        transition: 'zoom', //  none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        width: 1024,
+        height: 768,
+        margin: 0.1,
+        minScale: 0.2,
+        maxScale: 1.5,
+        viewDistance: 3,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+          // Interpret Markdown in <section> elements
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+          //{ src: 'plugin/highlight/highlight.js', async: false, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom in and out with Alt+click
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+
+          // Speaker notes
+          { src: 'plugin/notes/notes.js', async: true },
+
+          // MathJax
+          { src: 'plugin/math/math.js', async: true }
+        ],
+
+      });
+
+    </script>
+  </body>
+</html>
